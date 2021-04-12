@@ -3,4 +3,6 @@ include/
 lib/
 lib64/
 share/
+data/
+rawdata/
 pyvenv.cfg
