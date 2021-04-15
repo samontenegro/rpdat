@@ -5,4 +5,5 @@ lib64/
 share/
 data/
 rawdata/
+utility/__pycache__/
 pyvenv.cfg

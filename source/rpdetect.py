@@ -1,4 +1,4 @@
 import numpy
 
-def find_reverse_peaks(data_series, criteria)
+def find_reverse_peaks(data, criteria)
 	pass	
