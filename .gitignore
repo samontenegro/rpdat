@@ -6,4 +6,5 @@ share/
 data/
 rawdata/
 utility/__pycache__/
+source/__pycache__/
 pyvenv.cfg
