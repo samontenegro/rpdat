@@ -135,3 +135,21 @@ def rescale_vector(v):
 		np.full(v.size, 0.5, dtype=np.float64)
 
 	return v
+
+def cutoff_weighted_average(data_points, data_values, cutoff=0.0):
+
+	factor_sum = 0
+	denominator_sum = 0
+
+	for index in range(len(data_points)):
+		point_value = data_points[index]
+		data_value = data_values[index]
+
+		if point_value >= cutoff:
+			denominator_sum += point_value
+			factor_sum += point_value * data_value
+
+	try:
+		return factor_sum / denominator_sum
+	except ZeroDivisionError as e:
+		return 0.0

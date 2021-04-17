@@ -37,7 +37,7 @@ class Heartbeat:
 						listener()
 					except Exception as e:
 						# exceptions are being ignored... for now
-						pass
+						raise e
 
 	def unregister_listener(self, listener_id):
 		if listener_id in self.listeners:
